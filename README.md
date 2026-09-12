@@ -1,75 +1,77 @@
-# LKs 网站推荐合集
+# LKs Website Collection
 
-> B站博主 [LKs](https://space.bilibili.com/125526?spm_id_from=333.788.b_765f7570696e666f.1)《良心到难以置信的网站推荐》系列视频的网站推荐合集
+**English** | [简体中文](README.zh-CN.md)
 
-[在线预览](https://xiangjianan.github.io/lks) · [B站主页](https://space.bilibili.com/125526/) · [开源代码](https://github.com/xiangjianan/lks)
+> A collection of websites recommended by Bilibili creator [LKs](https://space.bilibili.com/125526?spm_id_from=333.788.b_765f7570696e666f.1) in the "Incredibly Generous Website Recommendations" video series
 
-## 项目简介
+[Live Preview](https://xiangjianan.github.io/lks) · [Bilibili Channel](https://space.bilibili.com/125526/) · [Source Code](https://github.com/xiangjianan/lks)
 
-本项目是一个静态网站，整理并展示了B站UP主 LKs 在《良心到难以置信的网站推荐》系列视频中推荐的所有优质网站。网站支持按期数、分类筛选，以及关键词搜索功能，方便用户快速找到感兴趣的网站。
+## Introduction
 
-**当前收录：** 第1期至第12期，共 **303** 个网站
+This project is a static website that organizes and showcases all the great websites recommended by Bilibili creator LKs in the "Incredibly Generous Website Recommendations" video series. The site supports filtering by episode and category, as well as keyword search, making it easy to quickly find websites of interest.
 
-## 功能特性
+**Currently included:** Episodes 1 through 12, **303** websites in total
 
-- 📚 **多期展示**：收录第1期至第12期的所有推荐网站
-- 🔍 **关键词搜索**：支持通过关键词快速搜索网站
-- 🏷️ **分类筛选**：按实用、学习、工具、艺术、生活、娱乐、视频、音乐、图片、游戏等分类筛选
-- ⭐ **收藏功能**：支持标记和查看收藏的网站
-- 📱 **响应式设计**：完美适配桌面端和移动端
-- 🎨 **精美界面**：基于 Bootstrap 4.6.1 构建的现代化UI设计
-- 💾 **本地缓存**：使用 localStorage 缓存数据，离线也可访问
+## Features
 
-## 技术栈
+- 📚 **Multiple episodes**: Includes all recommended websites from episodes 1 through 12
+- 🔍 **Keyword search**: Quickly search websites by keyword
+- 🏷️ **Category filtering**: Filter by category such as productivity, learning, tools, art, lifestyle, entertainment, video, music, images, and games
+- ⭐ **Favorites**: Mark and view your favorite websites
+- 📱 **Responsive design**: Fully adapted for both desktop and mobile
+- 🎨 **Polished UI**: Modern UI built on Bootstrap 4.6.1
+- 💾 **Local caching**: Data is cached with localStorage, so the site works offline too
 
-- **前端框架**：Bootstrap 4.6.1
-- **JavaScript 库**：jQuery 3.6.0
-- **布局库**：Isotope.js（筛选排序）
-- **图标库**：iconfont 2.0.1
-- **数据存储**：JSON 格式（web.v12.2.json）
+## Tech Stack
 
-## 项目结构
+- **Frontend framework**: Bootstrap 4.6.1
+- **JavaScript library**: jQuery 3.6.0
+- **Layout library**: Isotope.js (filtering and sorting)
+- **Icon library**: iconfont 2.0.1
+- **Data storage**: JSON format (web.v12.2.json)
+
+## Project Structure
 
 ```
 lks/
-├── index.html                 # 主页面
-├── favicon.ico               # 网站图标
-├── README.md                 # 项目说明文档
-├── LICENSE                   # MIT许可证
-├── .gitignore               # Git 忽略文件配置
+├── index.html                 # Main page
+├── favicon.ico               # Site icon
+├── README.md                 # Project documentation
+├── LICENSE                   # MIT license
+├── .gitignore               # Git ignore rules
 ├── .github/
-│   └── ISSUE_TEMPLATE/      # Issue 模板
+│   └── ISSUE_TEMPLATE/      # Issue templates
 │       ├── 新功能建议.md
 │       └── 网站失效.md
-└── static/                  # 静态资源目录
-    ├── bootstrap-4.6.1/    # Bootstrap 框架文件
-    ├── jquery-3.6.0/       # jQuery 库文件
-    ├── iconfont-2.0.1/     # 图标字体文件
-    └── site/               # 网站自定义资源
-        ├── css/            # 自定义样式文件
-        ├── js/             # JavaScript 文件
-        │   ├── index.2.2.4.js      # 主逻辑
-        │   ├── defer.2.2.3.js      # 延迟加载
-        │   └── web.v12.2.json      # 网站数据文件
-        └── img/            # 图片资源
+└── static/                  # Static assets
+    ├── bootstrap-4.6.1/    # Bootstrap framework files
+    ├── jquery-3.6.0/       # jQuery library files
+    ├── iconfont-2.0.1/     # Icon font files
+    └── site/               # Site custom assets
+        ├── css/            # Custom stylesheets
+        ├── js/             # JavaScript files
+        │   ├── index.2.2.4.js      # Main logic
+        │   ├── defer.2.2.3.js      # Deferred loading
+        │   └── web.v12.2.json      # Website data file
+        └── img/            # Image assets
 ```
 
-## 快速开始
+## Quick Start
 
-### 本地运行
+### Run Locally
 
-1. 克隆项目到本地
+1. Clone the project
 
 ```bash
 git clone https://github.com/xiangjianan/lks.git
 cd lks
 ```
 
-1. 直接在浏览器中打开 `index.html` 文件，或使用本地服务器
+1. Open the `index.html` file directly in a browser, or use a local server
 
-### 使用本地服务器（推荐）
+### Using a Local Server (Recommended)
 
-使用 Python 启动简单HTTP服务器：
+Start a simple HTTP server with Python:
 
 ```bash
 # Python 3
@@ -79,77 +81,77 @@ python -m http.server 8000
 python -m SimpleHTTPServer 8000
 ```
 
-然后在浏览器中访问 `http://localhost:8000`
+Then visit `http://localhost:8000` in your browser
 
-## 数据格式
+## Data Format
 
-网站数据存储在 `static/site/js/web.v12.2.json` 文件中，每个网站包含以下字段：
+Website data is stored in the `static/site/js/web.v12.2.json` file. Each website entry contains the following fields:
 
 ```json
 {
-  "kind": "web_12",           // 所属期数
-  "id": 1,                    // 网站ID
-  "title": "网站名称",         // 网站标题
-  "href": "https://example.com",  // 网站链接
-  "slogan": "网站简介",       // 网站描述
-  "kind_name": "分类名称",     // 分类标签
-  "star": "star",             // 是否收藏（可选）
-  "icon": ""                  // 图标（可选）
+  "kind": "web_12",           // Episode
+  "id": 1,                    // Website ID
+  "title": "网站名称",         // Website title
+  "href": "https://example.com",  // Website link
+  "slogan": "网站简介",       // Website description
+  "kind_name": "分类名称",     // Category tag
+  "star": "star",             // Favorited or not (optional)
+  "icon": ""                  // Icon (optional)
 }
 ```
 
-## 贡献指南
+## Contributing
 
-欢迎贡献代码、报告问题或提出建议！
+Contributions, bug reports, and suggestions are welcome!
 
-### 报告网站失效
+### Report a Dead Link
 
-如果你发现某个推荐网站已经失效，请使用 [网站失效模板](.github/ISSUE_TEMPLATE/网站失效.md) 提交 Issue。
+If you find that a recommended website is no longer available, please open an Issue using the [dead website template](.github/ISSUE_TEMPLATE/网站失效.md).
 
-### 提出新功能建议
+### Suggest a New Feature
 
-如果你有新的功能想法，请使用 [新功能建议模板](.github/ISSUE_TEMPLATE/新功能建议.md) 提交 Issue。
+If you have an idea for a new feature, please open an Issue using the [feature suggestion template](.github/ISSUE_TEMPLATE/新功能建议.md).
 
-### 提交代码
+### Submit Code
 
-1. Fork 本仓库
-2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的修改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启一个 Pull Request
+1. Fork this repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### 添加新网站
+### Add a New Website
 
-1. 编辑 `static/site/js/web.v12.2.json` 文件
-2. 按照数据格式添加新的网站信息
-3. 确保 `kind` 字段对应正确的期数（如第12期为 `web_12`）
-4. 提交 Pull Request
+1. Edit the `static/site/js/web.v12.2.json` file
+2. Add the new website entry following the data format
+3. Make sure the `kind` field matches the correct episode (e.g. episode 12 is `web_12`)
+4. Submit a Pull Request
 
-## 版本历史
+## Version History
 
-- **V0.12.0.0** - 第12期网站推荐
-- **V0.11.0.0** - 第11期网站推荐
-- **V0.10.0.0** - 第10期网站推荐
-- 更多版本信息请查看 [Tags](https://github.com/xiangjianan/lks/tags)
+- **V0.12.0.0** - Episode 12 website recommendations
+- **V0.11.0.0** - Episode 11 website recommendations
+- **V0.10.0.0** - Episode 10 website recommendations
+- See [Tags](https://github.com/xiangjianan/lks/tags) for more versions
 
-## 免责声明
+## Disclaimer
 
-本项目仅作为 LKs 视频中推荐网站的整理和展示，所有推荐网站的内容和版权均归其原作者所有。如发现网站内容不当或失效，请通过 Issue 反馈，我们将及时处理。
+This project only organizes and showcases the websites recommended in LKs' videos. The content and copyright of all recommended websites belong to their original authors. If you find any inappropriate or unavailable content, please report it via an Issue and we will handle it promptly.
 
-## 许可证
+## License
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## 致谢
+## Acknowledgements
 
-- 感谢 [LKs](https://space.bilibili.com/125526/) 制作了如此精彩的网站推荐视频
-- 感谢所有贡献者和反馈者的支持
+- Thanks to [LKs](https://space.bilibili.com/125526/) for creating such a wonderful website recommendation series
+- Thanks to all contributors and feedback providers for their support
 
-## 联系方式
+## Contact
 
-- 项目主页：<https://github.com/xiangjianan/lks>
-- 在线预览：<https://xiangjianan.github.io/lks>
-- 作者：[xiangjianan](https://github.com/xiangjianan)
+- Project homepage: <https://github.com/xiangjianan/lks>
+- Live preview: <https://xiangjianan.github.io/lks>
+- Author: [xiangjianan](https://github.com/xiangjianan)
 
 ***
 
